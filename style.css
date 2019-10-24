@@ -1,0 +1,93 @@
+body {
+  font-family: 'theinhardt', -apple-system;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-1 {
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+  padding: 2rem;
+}
+
+.col-3 {
+  width: 66%;
+  margin: 0;
+  float: left;
+}
+
+.phone-zone {
+  background-image: url("https://raw.githubusercontent.com/koenbok/Framer/master/extras/DeviceResources/apple-iphone-7-silver.png");
+  width: 100%;
+  padding-bottom: 205%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+.phone-zone .phone-zone__content {
+  position: absolute;
+  top: 12.5%;
+  left: 6.5%;
+  right: 6.5%;
+  overflow: hidden;
+  background: #ddd;
+  bottom: 12.5%;
+}
+.phone-zone .phone-zone__content img {
+  height: 100%;
+  width: 115%;
+  max-width: 110%;
+  object-fit: cover;
+  animation: phoneContentMotion ease 8s infinite;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+main {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: block;
+  overflow: visible;
+}
+
+@keyframes phoneContentMotion {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes phoneAnimation {
+  0% {
+    transform: rotateX(-5deg) rotateZ(-5deg);
+  }
+  50% {
+    transform: rotateX(5deg) rotateZ(-4deg);
+  }
+  100% {
+    transform: rotateX(-5deg) rotateZ(-5deg);
+  }
+}
